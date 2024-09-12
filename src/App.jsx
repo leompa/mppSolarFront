@@ -20,7 +20,7 @@ function App() {
         setError(error.message);
         setLoading(false);
       });
-  }, []);
+  }, []); 
 
   if (loading) return <p>Cargando...</p>;
   if (error) return <p>Error: {error}</p>;
@@ -36,6 +36,8 @@ function App() {
     "#2CA02C",
     "#D62728",
   ]}/>
+  <ReactSpeedometer value={data.pv_volt} maxValue={36} minValue={20} segments={4} />
+  <ReactSpeedometer value={data.w_salida} maxValue={1500} minValue={0} />
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
