@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://xsminternet.com/inverter/test.php") // Reemplaza con tu URL
+      .get("https://xsminternet.com/inverter/test.php") // Reemplaza con tu URL
       .then((response) => {
         setData(response.data);
         setLoading(false);
