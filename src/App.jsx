@@ -11,7 +11,7 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("http://45.175.154.45:180/mppsolar") // 
+      .get("http://45.175.154.45:180/mppsolar") // url leo
       .then((response) => {
         setData(response.data);
         setLoading(false);
